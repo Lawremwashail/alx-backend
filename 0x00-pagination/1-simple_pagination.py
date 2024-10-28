@@ -28,7 +28,7 @@ class Server:
         """Cached dataset
         """
         if self.__dataset is None:
-            with open(self.DATAii_FILE) as f:
+            with open(self.DATA_FILE) as f:
                 reader = csv.reader(f)
                 dataset = [row for row in reader]
             self.__dataset = dataset[1:]
